@@ -19,7 +19,7 @@ Todos os funcionários da loja podem gerenciar os filmes e executarem diferentes
 empréstimos e cada empréstimo terá um funcionário responsável.
 <br/>
 # 2 - Modelagem conceitual
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Modelo%20Conceitual.jpg">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Modelo%20Conceitual.jpg">
 
 # 3 - Demonstração textual do MER e Modelagem lógica
 Cliente(**id_cliente**, nome, rua, numero, bairro, data_nasc)
@@ -41,7 +41,7 @@ Funcionario_Filme(id_funcionario, id_filme)
 Emprestimo(**id_emprestimo**, forma_pagamento, data_emprestimo, data_devolucao, id_cliente, id_funcionario, id_filme)
 
 ## Modelo lógico 
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Modelo%20L%C3%B3gico.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Modelo%20L%C3%B3gico.png">
 
 # 4 - Modelagem física
 ```sql
@@ -339,54 +339,54 @@ INSERT INTO Emprestimo (forma_pagamento, data_emprestimo, id_cliente, id_funcion
 ('Cartão de Débito', '2024-06-04', 16, 19, 5);
 ```
 ## Clientes
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Cliente.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Cliente.png">
 
 ## Email 
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Email.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Email.png">
 
 ## Telefone
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Telefone.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Telefone.png">
 
 ## Funcionários
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Funcion%C3%A1rio.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Funcion%C3%A1rio.png">
 
 ## Diretores 
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Diretor.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Diretor.png">
 
 ## Filmes
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Filme.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Filme.png">
 
 ## Gêneros 
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/G%C3%AAnero.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/G%C3%AAnero.png">
 
 ## Funcionários_Filme
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Funcion%C3%A1rio_Filme.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Funcion%C3%A1rio_Filme.png">
 
 ## Empréstimos
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Emprestimo.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Emprestimo.png">
 
 # 6 - CRUD
 ## CREATE/INSERT
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Insert.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Insert.png">
 
 ## READ/SELECT
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Select.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Select.png">
 
 ## UPDATE
 
 ### Antes
-<img  src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Antes%20update.png">
+<img  src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Antes%20update.png">
 
 ### Depois
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Depois%20update.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Depois%20update.png">
 
 ## DELETE
 
 ### Antes
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Antes%20delete.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Antes%20delete.png">
 
 ### Depois
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Depois%20delete.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Depois%20delete.png">
 
 # 7 - Relatórios
 ## 1 - Listar os filmes que cada diretor dirigiu, ordenando pelo código de diretor.
@@ -394,21 +394,21 @@ INSERT INTO Emprestimo (forma_pagamento, data_emprestimo, id_cliente, id_funcion
 SELECT Diretor.id_diretor, Diretor.nome, Filme.titulo FROM Diretor
 JOIN Filme ON Diretor.id_diretor = Filme.id_diretor ORDER BY Diretor.id_diretor;
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%201.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%201.png">
 
 ## 2 - Localizar apenas os filmes do gênero drama.
 ```sql
 SELECT Genero.tipo_genero, Filme.titulo FROM Genero JOIN Filme ON Genero.id_filme = Filme.id_filme
 WHERE Genero.tipo_genero = 'Drama';
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%202.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%202.png">
 
 ## 3 - Mostrar o preço de cada filme ordenando do mais caro ao mais barato.
 ```sql
 SELECT Filme.id_filme, Filme.titulo, Filme.preco FROM Filme
 ORDER BY Filme.preco DESC
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%203.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%203.png">
 
 ## 4 - Listar os filmes alugados no mês de junho.
 ```sql
@@ -416,7 +416,7 @@ SELECT Filme.id_filme, Filme.titulo, Emprestimo.data_emprestimo FROM Filme
 JOIN Emprestimo ON Filme.id_filme = Emprestimo.id_filme
 WHERE Emprestimo.data_emprestimo BETWEEN '2024-06-01' AND '2024-06-30';
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%204.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%204.png">
 
 ## 5 - Achar os empréstimos realizados por cada cliente, ordenando pelo código do cliente.
 ```sql
@@ -424,14 +424,14 @@ SELECT Cliente.id_cliente, Cliente.nome, Emprestimo.forma_pagamento, Emprestimo.
 JOIN Emprestimo ON Cliente.id_cliente = Emprestimo.id_cliente
 ORDER BY Cliente.id_cliente;
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%205.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%205.png">
 
 ## 6 - Mostrar somente os filmes com o valor menor de 15 reais.
 ```sql
 SELECT Filme.id_filme, Filme.titulo, Filme.preco FROM Filme
 WHERE Filme.preco<15;
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%206.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%206.png">
 
 ## 7 - Apresentar os diretores com filmes de vários gêneros diferentes.
 ```sql
@@ -439,7 +439,7 @@ SELECT Diretor.id_diretor, Diretor.nome, COUNT(DISTINCT Genero.tipo_genero) AS q
 JOIN Filme ON Diretor.id_diretor = Filme.id_diretor JOIN Genero ON Filme.id_filme = Genero.id_filme
 GROUP BY Diretor.id_diretor, Diretor.nome HAVING COUNT(DISTINCT Genero.tipo_genero)>1;
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%207.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%207.png">
 
 ## 8 - Selecionar os funcionários e filmes que eles gerenciaram.
 ```sql
@@ -447,7 +447,7 @@ SELECT Funcionario.id_funcionario, Funcionario.nome, Filme.titulo FROM Funcionar
 JOIN Funcionario_Filme ON Funcionario.id_funcionario = Funcionario_Filme.id_funcionario
 JOIN Filme ON Funcionario_Filme.id_filme = Filme.id_filme;
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%208.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%208.png.png">
 
 ## 9 - Procurar os filmes que ainda não foram emprestados.
 ```sql
@@ -455,13 +455,13 @@ SELECT Filme.id_filme, Filme.titulo FROM Filme
 LEFT JOIN Emprestimo ON Filme.id_filme = Emprestimo.id_filme
 WHERE Emprestimo.id_emprestimo IS NULL
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%209.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%209.png">
 
 ## 10 - Listar os funcionários que foram contratados no ano de 2020.
 ```sql
 SELECT Funcionario.id_funcionario, Funcionario.nome, Funcionario.data_contratacao FROM Funcionario
 WHERE YEAR(Funcionario.data_contratacao) = 2020
 ```
-<img src="https://github.com/Pedro357d/Avalia-o-final/blob/main/Demonstra%C3%A7%C3%A3o%2010.png">
+<img src="https://github.com/Pedro357d/prova.sql/blob/main/imagens/Demonstra%C3%A7%C3%A3o%2010.png">
 
 
